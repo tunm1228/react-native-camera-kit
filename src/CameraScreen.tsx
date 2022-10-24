@@ -339,7 +339,7 @@ export default class CameraScreen extends Component<Props, State> {
 
   render() {
     return (
-      <View style={{ flex: 1, backgroundColor: 'black' }} {...this.props}>
+      <View style={{ height: 300, width: 300, backgroundColor: '#FFF', alignSelf: 'center' }}>
         {Platform.OS === 'android' && this.renderCamera()}
         {this.renderTopButtons()}
         {Platform.OS !== 'android' && this.renderCamera()}
